@@ -1,0 +1,20 @@
+{
+  "name": "motionsites",
+  "description": "Free Claude skills from MotionSites for building award-level websites.",
+  "owner": {
+    "name": "MotionSites",
+    "url": "https://motionsites.ai"
+  },
+  "plugins": [
+    {
+      "name": "motionsites-web-builder",
+      "source": "./plugins/motionsites-web-builder",
+      "description": "Build award-level, cinematic landing pages and hero sections instead of average AI layouts.",
+      "author": {
+        "name": "MotionSites"
+      },
+      "homepage": "https://motionsites.ai/?utm_source=github&utm_medium=claude-skill&utm_campaign=web-builder",
+      "category": "design"
+    }
+  ]
+}

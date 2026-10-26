@@ -1,0 +1,8 @@
+{
+  "name": "motionsites-web-builder",
+  "description": "Build award-level, cinematic landing pages and hero sections instead of average AI layouts: 40 top free MotionSites prompts as examples, a media shelf of cinematic videos and cut-outs, 55+ technique recipes, and a screenshot-and-fix review loop.",
+  "version": "1.0.0",
+  "author": { "name": "MotionSites", "url": "https://motionsites.ai" },
+  "homepage": "https://motionsites.ai/?utm_source=github&utm_medium=claude-skill&utm_campaign=web-builder",
+  "keywords": ["web design", "landing page", "hero section", "awwwards", "skill"]
+}
