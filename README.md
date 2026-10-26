@@ -4,8 +4,8 @@
 
 AI-built websites tend to look the same for three reasons: a vague plan, no real media, and nobody looking at the result. This skill fixes all three. Claude studies the most-liked designs from [MotionSites](https://motionsites.ai/?utm_source=github&utm_medium=claude-skill&utm_campaign=web-builder), picks real cinematic media, writes a precise build spec, builds the page, then **screenshots its own work and fixes it** until it clears a gallery-level bar.
 
-![Some of the cinematic hero videos included on the media shelf](preview-media.jpg)
-<sub>A few of the 50+ hero videos on the skill's media shelf.</sub>
+![Example designs from the skill, each next to the hero video it is built on](preview-media.jpg)
+<sub>8 of the 40 example designs inside the skill, each shown next to the video it's built on. All 50+ videos are on the skill's media shelf.</sub>
 
 ## What's inside
 - **40 example prompts:** the most-liked free prompts on MotionSites, the designs people actually love. Claude reads the closest 2–3 for every brief to match their level of detail and taste.
