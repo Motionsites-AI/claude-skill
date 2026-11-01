@@ -51,7 +51,7 @@ Build exactly what the spec says, using recipes from `references/techniques.md` 
 - No lorem ipsum, no placeholder boxes, no emoji as icons (use inline SVG).
 
 ### 6. Look and fix (mandatory)
-Run `python scripts/shoot.py index.html shots/` (it needs Playwright; see the script's header), then **open and look at** the screenshots. Score the page with `references/review.md`, fix the three weakest areas with concrete changes, and shoot again. Repeat until you clear the bar (an average of 8+, nothing under 7) or for 3 rounds.
+Run `python scripts/shoot.py index.html shots/` (it needs Playwright; see the script's header), then **open and look at** the screenshots. Score the page with `references/review.md`, fix the three weakest areas with concrete changes, and shoot again. Repeat until you clear the bar (an average of 8+, nothing under 7), for a maximum of 3 rounds.
 
 Never skip this step. The first version is never the best one.
 
