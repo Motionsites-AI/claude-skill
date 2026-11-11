@@ -12,18 +12,20 @@ URLs), horizontal overflow, fonts, videos and images that did not load.
 Needs Playwright:  pip install playwright && python -m playwright install chromium
 Falls back to headless Chrome (screenshots only, no QA) if Playwright is missing.
 """
-import json, os, shutil, subprocess, sys, time
+import argparse, json, os, shutil, subprocess, sys, time
 from pathlib import Path
 
-args = [a for a in sys.argv[1:] if not a.startswith("--")]
-flags = sys.argv[1:]
-if not args:
+if len(sys.argv) < 2:
     sys.exit(__doc__)
-target = args[0]
-out = Path(args[1] if len(args) > 1 else "shots")
+parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+parser.add_argument("target")
+parser.add_argument("out_dir", nargs="?", default="shots")
+parser.add_argument("--wait", type=float, default=2.5)
+parser.add_argument("--full", action="store_true")
+opts = parser.parse_args()
+target, wait, full = opts.target, opts.wait, opts.full
+out = Path(opts.out_dir)
 out.mkdir(parents=True, exist_ok=True)
-wait = float(flags[flags.index("--wait") + 1]) if "--wait" in flags else 2.5
-full = "--full" in flags
 url = target if "://" in target else Path(target).resolve().as_uri()
 
 VIEWS = [("desktop", 1440, 900), ("mobile", 390, 844)]
