@@ -89,13 +89,15 @@ def with_playwright():
 
 def with_chrome():
     chrome = next((c for c in ["google-chrome", "chromium", "chromium-browser",
-                               "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"]
+                               "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+                               *(os.path.join(os.environ[v], "Google", "Chrome", "Application", "chrome.exe")
+                                 for v in ("PROGRAMFILES", "PROGRAMFILES(X86)", "LOCALAPPDATA") if os.environ.get(v))]
                    if shutil.which(c) or os.path.exists(c)), None)
     if not chrome:
         sys.exit("No Playwright and no Chrome found. Install: pip install playwright && python -m playwright install chromium")
     for name, w, h in VIEWS:
         subprocess.run([chrome, "--headless=new", "--hide-scrollbars", f"--window-size={w},{h}",
-                        f"--virtual-time-budget={int(wait * 1000)}", f"--screenshot={out / (name + '.png')}", url],
+                        f"--virtual-time-budget={int(wait * 1000)}", f"--screenshot={(out / (name + '.png')).resolve()}", url],
                        capture_output=True, timeout=120)
     return {"note": "headless Chrome fallback: screenshots only, no QA report"}
 
