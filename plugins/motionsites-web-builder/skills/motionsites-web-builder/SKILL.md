@@ -47,6 +47,7 @@ If the user asked for a **prompt only**, the spec is the deliverable: format it 
 Build exactly what the spec says, using recipes from `references/techniques.md` (they are tested and handle mobile and reduced motion).
 - **Single-file default:** one `index.html` with inline `<style>` and `<script>`, Google Fonts, and libraries from a CDN with pinned versions (e.g. `three@0.170.0`, `gsap@3.12.5`).
 - The first CSS rule sets the page background on `html, body`, so there's no white flash.
+- Include `<meta name="viewport" content="width=device-width, initial-scale=1">`. Without it, phones lay the page out at ~980px and the mobile check is wrong.
 - Semantic HTML, a real `<title>`, alt text, visible focus states, and `prefers-reduced-motion` respected.
 - No lorem ipsum, no placeholder boxes, no emoji as icons (use inline SVG).
 
