@@ -39,6 +39,7 @@ QA_JS = """() => {
   const h1 = document.querySelector('h1');
   return {
     title: document.title,
+    viewportMeta: !!document.querySelector('meta[name="viewport"]'),
     scrollWidth: document.documentElement.scrollWidth, viewport: vw,
     horizontalOverflow: document.documentElement.scrollWidth > vw + 1, overflowingElements: wide,
     pageHeight: document.documentElement.scrollHeight,
@@ -81,6 +82,10 @@ def with_playwright():
             if engine != "chrome" and any(v["error"] == 4 for v in qa["videos"]):
                 qa["videoNote"] = "This browser cannot decode the MP4; judge the video area from the poster/source, not as a bug."
             qa["consoleErrors"], qa["failedRequests"] = errors[:10], [f for f in failed if "ERR_ABORTED" not in f][:10]
+            if name == "mobile" and not qa.get("viewportMeta"):
+                qa["viewportNote"] = ("Missing <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">: "
+                                      "the phone layout is measured at ~980px, so the overflow and font checks above are wrong. "
+                                      "Add the tag and shoot again.")
             report[name] = qa
             ctx.close()
         browser.close()
