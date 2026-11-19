@@ -243,4 +243,4 @@ Also: ≤420px headline/trust tweaks; ≤700px height tighten hero spacing.
 
 ## Implementation stack
 
-Plain `index.html` + `styles.css` + `main.js`. No React/build step required. Copy local `assets/logo.webp` and `fonts/GeistPixel-Circle.woff2`. Load **Inter**, **BubbledotICG-FinePos** (OnlineWebFonts), and **Font Awesome 6.5.2** from CDNs as specified. Use the **exact** CloudFront MP4 URL above for the background video.
+Plain `index.html` + `styles.css` + `main.js`. No React/build step required. Use your own logo and font files: the skill does not ship `assets/logo.webp` or `fonts/GeistPixel-Circle.woff2`, so replace those references (or load the font from a CDN). Load **Inter**, **BubbledotICG-FinePos** (OnlineWebFonts), and **Font Awesome 6.5.2** from CDNs as specified. Use the **exact** CloudFront MP4 URL above for the background video.
