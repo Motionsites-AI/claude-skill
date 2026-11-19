@@ -7,6 +7,18 @@ AI-built websites tend to look the same for three reasons: a vague plan, no real
 ![Example designs from the skill, each next to the hero video it is built on](preview-media.jpg)
 <sub>8 of the 40 example designs inside the skill, each shown next to the video it's built on. All 50+ videos are on the skill's media shelf.</sub>
 
+## Quick start
+
+**Claude.ai / desktop:** download `motionsites-web-builder.zip` from the [latest release](../../releases/latest), then upload it under **Customize → Skills → + → Create skill → Upload a skill** and switch it on. Code execution must be on (Settings → Capabilities).
+
+**Claude Code:**
+```
+/plugin marketplace add Motionsites-AI/claude-skill
+/plugin install motionsites-web-builder@motionsites
+```
+
+Then ask for a page: *"Build a landing page hero for a luxury sleep-tracking ring."*
+
 ## What's inside
 - **40 example prompts:** the most-liked free prompts on MotionSites, the designs people actually love. Claude reads the closest 2–3 for every brief to match their level of detail and taste.
 - **A media shelf:** 50+ cinematic hero videos, 30 transparent 3D cut-outs and 29 images, publicly hosted and shown on numbered contact sheets so Claude picks media by eye.
@@ -28,20 +40,7 @@ AI-built websites tend to look the same for three reasons: a vague plan, no real
 - A Claude plan with **Skills** (Claude.ai, Claude desktop or Claude Code).
 - For the screenshot-and-fix loop: Python 3 with Playwright (optional; the skill still works without it, but cannot check its own rendering).
 
-## Install
-
-### Claude.ai and Claude desktop
-1. Download **`motionsites-web-builder.zip`** from the [latest release](../../releases/latest).
-2. In Claude, open **Customize → Skills → + → Create skill → Upload a skill**, choose the zip, and switch the skill on. (Code execution must be enabled in Settings → Capabilities.)
-
-If the upload is rejected, check that the zip contains the `motionsites-web-builder/` folder with its `SKILL.md` at the top level of that folder.
-
-### Claude Code (plugin)
-```
-/plugin marketplace add Motionsites-AI/claude-skill
-/plugin install motionsites-web-builder@motionsites
-```
-No GitHub SSH key? Use `/plugin marketplace add https://github.com/Motionsites-AI/claude-skill.git` instead.
+## Other install options
 
 ### Claude Code (manual)
 Copy `plugins/motionsites-web-builder/skills/motionsites-web-builder` into `~/.claude/skills/`.
