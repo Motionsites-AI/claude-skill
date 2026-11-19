@@ -13,7 +13,7 @@ Average AI websites happen for three reasons: a vague plan, no real media, and n
 Settle these five things, briefly, in your head or in one short message:
 - **What and who:** the product or person, and the visitor you are persuading.
 - **Mood in three words** (e.g. "calm, expensive, nocturnal").
-- **The signature:** the one memorable idea this page will be known for (media, interaction or type moment). Pick from `references/techniques.md` or invent one.
+- **The signature:** the one memorable idea this page will be known for (media, interaction or type moment). Pick from `references/techniques/INDEX.md` or invent one.
 - **Output:** a single `index.html` (default: CDN only, opens anywhere), the user's existing stack (React/Next/Vite...), or a **prompt only** for another builder (see `references/builders.md`).
 - **Scope:** a hero (default when unspecified), or a full landing page.
 
@@ -44,7 +44,7 @@ Include the real copy: headline, subline, nav, CTA, stats. Write it like a sharp
 If the user asked for a **prompt only**, the spec is the deliverable: format it for their builder (see `references/builders.md`) and you're done after a self-check against `references/review.md`.
 
 ### 5. Build
-Build exactly what the spec says, using recipes from `references/techniques.md` (they are tested and handle mobile and reduced motion).
+Build exactly what the spec says, using recipes from `references/techniques/INDEX.md` (they are tested and handle mobile and reduced motion).
 - **Single-file default:** one `index.html` with inline `<style>` and `<script>`, Google Fonts, and libraries from a CDN with pinned versions (e.g. `three@0.170.0`, `gsap@3.12.5`).
 - The first CSS rule sets the page background on `html, body`, so there's no white flash.
 - Semantic HTML, a real `<title>`, alt text, visible focus states, and `prefers-reduced-motion` respected.
