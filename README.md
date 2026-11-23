@@ -4,8 +4,8 @@
 
 AI-built websites tend to look the same because they start from a vague idea and no real media. This skill starts from a **real, finished design** that people already love: Claude picks the one [MotionSites](https://motionsites.ai/?utm_source=github&utm_medium=claude-skill&utm_campaign=web-builder) design that best fits your brief, makes it yours (your copy, colours and media), builds it, then **looks at a screenshot and fixes what's off**.
 
-![Example designs from the skill](preview-media.jpg)
-<sub>8 of the 16 designs inside the skill. Each one is a full, detailed build prompt Claude can start from.</sub>
+![MotionSites designs in motion](demo.gif)
+<sub>Designs from MotionSites, the kind of pages this skill builds from. Each design in the skill is a full, detailed build prompt Claude can start from.</sub>
 
 ## What's inside
 - **16 hand-picked designs:** free MotionSites designs people are copying most right now, from a VHS-shelf portfolio and a runway lookbook to a floating-island SaaS hero and a 3D bookshop. Each has a one-line "what it is and how it feels" so Claude picks the right one fast.
