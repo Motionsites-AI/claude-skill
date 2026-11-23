@@ -1,6 +1,5 @@
-<!-- 3D Jack Portfolio · Portfolio · 2450 likes · free MotionSites prompt -->
+<!-- 3D Jack Portfolio · Portfolio · free MotionSites prompt -->
 <!-- Preview: https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260715_020402_14047c8b-e116-4ac5-bc7d-1ab18d18a358.png&w=1280&q=85 · Source: https://motionsites.ai/?prompt=3d-jack-portfolio-hero -->
-<!-- Free sample. 500+ premium prompts like this: https://motionsites.ai/unlimited?utm_source=claude-skill&utm_medium=skill&utm_campaign=web-builder&utm_content=example-file -->
 
 Build a 3D Creator portfolio landing page for "Jack" using React, TypeScript, Tailwind CSS, Framer Motion, and Lucide React. The page has a dark theme (#0C0C0C background) with the font Kanit (Google Fonts, weights 300-900). The page title is "Jack -- 3D Creator".
 

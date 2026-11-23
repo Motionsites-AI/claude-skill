@@ -1,6 +1,5 @@
-<!-- Agent Wave · AI · 801 likes · free MotionSites prompt -->
+<!-- Agent Wave · AI · free MotionSites prompt -->
 <!-- Preview: https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260818_075101_ea68beb6-4f5a-4e14-9dd0-6f07c6a8e27c.png&w=1280&q=85 · Source: https://motionsites.ai/?prompt=agent-wave -->
-<!-- Free sample. 500+ premium prompts like this: https://motionsites.ai/unlimited?utm_source=claude-skill&utm_medium=skill&utm_campaign=web-builder&utm_content=example-file -->
 
 Recreate this exact single-viewport landing page for **Vesper.ai**. Document title: `Vesper.ai — Operational AI Infrastructure`. `lang="en"`. One HTML file with inline CSS and a small IIFE for the menu + animation fallback. Pure black `#000000`. No extra sections, cards, forms, pricing tables, or footer beyond the three stats. Do **not** add a video, WebGL, Three.js, or Lottie. Do **not** invent a CloudFront URL.
 

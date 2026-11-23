@@ -32,12 +32,12 @@ Any of these makes the page fail, whatever else is good:
 9. **Copy.** Specific, short, believable for this brand; a headline with a point of view; CTA with a verb.
 10. **Polish.** Hover/focus states, consistent radii and borders, favicon/title, no stray scrollbars, no layout shift as fonts/media load.
 
-**The bar is an average of 8 or more with no score under 7.** Most first drafts land at 6–7. That's normal; the fixes are what make it great.
+**Aim for an average of 8 or more with no score under 7.** Starting from a strong reference usually gets you most of the way; the fixes close the gap.
 
 ## Fix loop
-1. Write down the three weakest scores and, for each, the specific change (values, not adjectives): "H1 from 64px to clamp(56px, 8vw, 128px), tracking -0.04em", "add a 40% black-to-transparent gradient over the bottom of the video", "move the stats row into one line with 1px dividers".
-2. Make those changes, then shoot again and look again.
-3. Repeat up to 3 rounds, or until you clear the bar. If something can't be fixed (e.g. no suitable media), tell the user plainly what would lift it.
+1. Fix every blocking problem above.
+2. Pick the **two weakest** scores and write the specific change for each (values, not adjectives): "H1 from 64px to clamp(56px, 8vw, 128px), tracking -0.04em", "add a 40% black-to-transparent gradient over the bottom of the video".
+3. Make those changes, shoot once more and look again. Do a second round only if something blocking is still there. If something can't be fixed (e.g. no suitable media), tell the user plainly what would lift it.
 
 Common high-impact fixes:
 - **It looks generic.** Make the type bigger, cut words, strengthen the signature, remove a section or element.

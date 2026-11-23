@@ -2,27 +2,20 @@
 
 **Make Claude build award-level, cinematic landing pages instead of average AI layouts.**
 
-AI-built websites tend to look the same for three reasons: a vague plan, no real media, and nobody looking at the result. This skill fixes all three. Claude studies the most-liked designs from [MotionSites](https://motionsites.ai/?utm_source=github&utm_medium=claude-skill&utm_campaign=web-builder), picks real cinematic media, writes a precise build spec, builds the page, then **screenshots its own work and fixes it** until it clears a gallery-level bar.
+AI-built websites tend to look the same because they start from a vague idea and no real media. This skill starts from a **real, finished design** that people already love: Claude picks the one [MotionSites](https://motionsites.ai/?utm_source=github&utm_medium=claude-skill&utm_campaign=web-builder) design that best fits your brief, makes it yours (your copy, colours and media), builds it, then **looks at a screenshot and fixes what's off**.
 
-![Example designs from the skill, each next to the hero video it is built on](preview-media.jpg)
-<sub>8 of the 40 example designs inside the skill, each shown next to the video it's built on. All 50+ videos are on the skill's media shelf.</sub>
+![Example designs from the skill](preview-media.jpg)
+<sub>8 of the 16 designs inside the skill. Each one is a full, detailed build prompt Claude can start from.</sub>
 
 ## What's inside
-- **40 example prompts:** the most-liked free prompts on MotionSites, the designs people actually love. Claude reads the closest 2–3 for every brief to match their level of detail and taste.
-- **A media shelf:** 50+ cinematic hero videos, 30 transparent 3D cut-outs and 29 images, publicly hosted and shown on numbered contact sheets so Claude picks media by eye.
-- **55+ technique recipes** with working code, for example:
-  - seamless video loops;
-  - liquid glass;
-  - word-by-word blur headlines;
-  - mouse-scrubbed video;
-  - spotlight reveals;
-  - depth carousels;
-  - scroll stories;
-  - real 3D models (Three.js).
-- **Design taste rules with real numbers:** type scale, tracking, spacing, colour, motion timing and copy.
-- **A spec template:** the precise brief Claude writes before coding. That's where quality is decided.
-- **A look-and-fix loop:** a screenshot + QA script (broken assets, mobile overflow, fonts, video playback) and a scoring rubric.
-- **Prompt mode:** ask for a prompt instead of code, and get one tuned for Lovable, Bolt, v0, Cursor, Manus, Google AI Studio or Kimi.
+- **16 hand-picked designs:** free MotionSites designs people are copying most right now, from a VHS-shelf portfolio and a runway lookbook to a floating-island SaaS hero and a 3D bookshop. Each has a one-line "what it is and how it feels" so Claude picks the right one fast.
+- **A media shelf:** 76 free hero background videos from [motionsites.ai/backgrounds](https://motionsites.ai/backgrounds?utm_source=github&utm_medium=claude-skill&utm_campaign=web-builder), each described by mood, plus the videos, transparent cut-outs and images the designs use. Shown on numbered contact sheets so Claude picks by eye.
+- **55+ technique recipes** with working code: seamless video loops, liquid glass, word-by-word blur headlines, mouse-scrubbed video, depth carousels, scroll stories, real 3D (Three.js) and more.
+- **Taste rules with real numbers:** type scale, tracking, spacing, colour, motion timing and copy.
+- **A look-and-fix step:** a screenshot + QA script and a short checklist. One round, not an endless loop.
+- **Works where you work:** inside your existing React/Next/Vite project, or as a single `index.html` that opens anywhere.
+- **Prompt mode:** ask for a prompt instead of code, tuned for Lovable, Bolt, v0, Cursor, Manus, Google AI Studio or Kimi.
+- **Even better with the [MotionSites MCP](https://motionsites.ai/mcp?utm_source=github&utm_medium=claude-skill&utm_campaign=web-builder):** if it's connected, Claude picks from the full library instead of the free sample.
 
 ## Install
 
